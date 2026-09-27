@@ -1,5 +1,7 @@
---DDL (Data Definition Language - Veri Tanımlama Dili), verilerin kendisiyle değil, verilerin tutulduğu yapı ile ilgilenen SQL komutlarıdır. 
--- Tablo oluşturma(create), değiştirme(alter), silme(drop) veya tablonun içeriğini sıfırlama(truncate) işlemleri için kullanılır. 
+-- DDL (Data Definition Language - Veri Tanımlama Dili), verilerin kendisiyle değil, 
+-- verilerin tutulduğu yapı ile ilgilenen SQL komutlarıdır. 
+-- Tablo oluşturma(create), değiştirme(alter), silme(drop) veya tablonun içeriğini 
+-- sıfırlama(truncate) işlemleri için kullanılır. 
 
 -- 1. Adım: Personel tablosunu oluşturalım.
 
@@ -9,7 +11,9 @@ create table personel (
   maas number
 );
 
--- 2. Adım: DML ile veri manipülasyonu
+-- 2. Adım: DML(Data Manipulation Language) ile veri manipülasyonu
+-- DML, Tablolarda yer alan verileri sorgulamak(select), eklemek(insert), 
+-- Güncellemek(update) ve silmek(delete) için kullanılılan SQL komutlarıdır.
 
 -- Personel tablosuna veri ekleme
 insert into personel(id, isim, maas) values(1, 'Mahmut Turkmen', 50000);
